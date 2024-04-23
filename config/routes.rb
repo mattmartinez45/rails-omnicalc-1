@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get("/square_root/results", {:controller => "routing", :action => "results_root"}) 
 
-  get("/payment/new", {:controller => "routing", :action => "new_paymnet"})
+  get("/payment/new", {:controller => "routing", :action => "new_payment"})
   
   get("/payment/results", {:controller => "routing", :action => "results_payment"}) 
 
