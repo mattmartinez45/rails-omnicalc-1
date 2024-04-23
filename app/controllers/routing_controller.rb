@@ -5,7 +5,7 @@ class RoutingController < ApplicationController
   end
 
   def results_square
-    @the_num = params.fetch("users_number").to_f
+    @the_num = params.fetch("user_number").to_f
     @the_result = @the_num ** 2
     render({:template => "pages/results_square"})
   end
@@ -15,7 +15,7 @@ class RoutingController < ApplicationController
   end
 
   def results_root
-    @the_num_2 = params.fetch("users_number_2").to_f
+    @the_num_2 = params.fetch("user_number_2").to_f
     @the_result_2 = Math.sqrt(@the_num_2)
     render({:template => "pages/results_root"})
   end
